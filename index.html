@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__title">Forum</div>
+      <ul class="list header__list">
+        <li class="item header__item"><a class="header__link" href="/">Sign in</a></li>
+        <li class="item header__item"><a class="header__link" href="/">Sign up</a></li>
+      </ul>
+      <div class="header__burger">
+        <img class="header__img" src="/images/burger.png" alt="Toggle menu" />
+      </div>
+      <div data-visible="false" class="header__burger-menu">
+        <ul class="header__burger-list">
+          <li class="header__item"><a class="header__burger-links" href="/">Computer and IT</a></li>
+          <li class="header__item"><a class="header__burger-links" href="/">Economy</a></li>
+          <li class="header__item"><a class="header__burger-links" href="/">Cars</a></li>
+          <li class="header__item"><a class="header__burger-links" href="/">Politics</a></li>
+          <li class="header__item"><a class="header__burger-links" href="/">Other</a></li>
+        </ul>
+      </div>
+    </header>
+    <nav class="nav">
+      <ul class="list nav__list">
+        <li class="item nav__item nav__item--first"><a class="nav__link" href="">Search</a></li>
+        <li class="item nav__item nav__item--mobile-only">
+          <a class="nav__link" href="">Sign in</a>
+        </li>
+        <li class="item nav__item nav__item--mobile-only">
+          <a class="nav__link" href="">Sign up</a>
+        </li>
+        <li class="item nav__item nav__item--desktop-only">
+          <a class="nav__link" href="">Trending</a>
+        </li>
+        <li class="item nav__item nav__item--desktop-only">
+          <a class="nav__link" href="">Newest</a>
+        </li>
+      </ul>
+    </nav>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
