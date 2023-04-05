@@ -15,27 +15,42 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__title">Forum</div>
+      <div class="header__title"><a class="header__title-link" href="/">Forum</a></div>
       <ul class="list header__list">
         <li class="item header__item"><a class="header__link" href="/">Sign in</a></li>
         <li class="item header__item"><a class="header__link" href="/">Sign up</a></li>
       </ul>
       <div class="header__burger">
-        <img class="header__img" src="/images/burger.png" alt="Toggle menu" />
+        <img class="header__img header__img-open" src="/images/burger.png" alt="Open menu" />
       </div>
       <div data-visible="false" class="header__burger-menu">
+        <div class="header__burger">
+          <img
+            class="header__img header__img-close"
+            src="/images/burger-close.png"
+            alt="Close menu"
+          />
+        </div>
         <ul class="header__burger-list">
-          <li class="header__item"><a class="header__burger-links" href="/">Computer and IT</a></li>
-          <li class="header__item"><a class="header__burger-links" href="/">Economy</a></li>
-          <li class="header__item"><a class="header__burger-links" href="/">Cars</a></li>
-          <li class="header__item"><a class="header__burger-links" href="/">Politics</a></li>
+          <li class="header__item">
+            <a class="header__burger-links" href="#trending">Trending</a>
+          </li>
+          <li class="header__item">
+            <a class="header__burger-links" href="#computer_and_it">Computer and IT</a>
+          </li>
+          <li class="header__item"><a class="header__burger-links" href="#cars">Cars</a></li>
+          <li class="header__item">
+            <a class="header__burger-links" href="#politics">Politics</a>
+          </li>
           <li class="header__item"><a class="header__burger-links" href="/">Other</a></li>
         </ul>
       </div>
     </header>
     <nav class="nav">
       <ul class="list nav__list">
-        <li class="item nav__item nav__item--first"><a class="nav__link" href="">Search</a></li>
+        <li id="search" class="item nav__item nav__item--first">
+          <a class="nav__link" href="#">Search</a>
+        </li>
         <li class="item nav__item nav__item--mobile-only">
           <a class="nav__link" href="">Sign in</a>
         </li>
@@ -43,13 +58,887 @@
           <a class="nav__link" href="">Sign up</a>
         </li>
         <li class="item nav__item nav__item--desktop-only">
-          <a class="nav__link" href="">Trending</a>
+          <a class="nav__link" href="#trending">Trending</a>
         </li>
         <li class="item nav__item nav__item--desktop-only">
-          <a class="nav__link" href="">Newest</a>
+          <a class="nav__link" href="#computer_and_it">Computer and IT</a>
+        </li>
+        <li class="item nav__item nav__item--desktop-only">
+          <a class="nav__link" href="#economy">Economy</a>
+        </li>
+        <li class="item nav__item nav__item--desktop-only">
+          <a class="nav__link" href="#cars">Cars</a>
+        </li>
+        <li class="item nav__item nav__item--desktop-only">
+          <a class="nav__link" href="#politics">Politics</a>
+        </li>
+        <li class="item nav__item nav__item--desktop-only">
+          <a class="nav__link" href="">Other</a>
         </li>
       </ul>
     </nav>
+    <main class="main">
+      <div id="trending" class="main__container">
+        <section class="main__card">
+          <h2 class="main__title">Trending</h2>
+          <table class="main__table">
+            <tbody class="main__table-body">
+              <tr class="main__table-row">
+                <td class="main__table-data main__table-data--first">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+      <div id="computer_and_it" class="main__container">
+        <section class="main__card">
+          <h2 class="main__title">Computer and IT</h2>
+          <table class="main__table">
+            <tbody class="main__table-body">
+              <tr class="main__table-row">
+                <td class="main__table-data main__table-data--first">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+      <div id="economy" class="main__container">
+        <section class="main__card">
+          <h2 class="main__title">Economy</h2>
+          <table class="main__table">
+            <tbody class="main__table-body">
+              <tr class="main__table-row">
+                <td class="main__table-data main__table-data--first">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+      <div id="cars" class="main__container">
+        <section class="main__card">
+          <h2 class="main__title">Cars</h2>
+          <table class="main__table">
+            <tbody class="main__table-body">
+              <tr class="main__table-row">
+                <td class="main__table-data main__table-data--first">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+      <div id="politics" class="main__container">
+        <section class="main__card">
+          <h2 class="main__title">Politics</h2>
+          <table class="main__table">
+            <tbody class="main__table-body">
+              <tr class="main__table-row">
+                <td class="main__table-data main__table-data--first">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+                <td class="main__table-data">
+                  <div class="main__post-title">
+                    <a class="main__post-link" href="">Forum is awesome!</a>
+                  </div>
+                  <div class="main__post-info">
+                    <div class="main__post-author">
+                      By
+                      <a class="main__post-author-link" href="">user313</a>
+                    </div>
+                    <div class="main__post-time"></div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">Forum - No copyright</p>
+      <div class="footer__container">
+        <div class="footer__block">
+          <h3 class="footer__title">Socials</h3>
+          <div class="footer__block-link">
+            <a class="footer__link" href="">Twitter</a>
+            <a class="footer__link" href="">Github</a>
+            <a class="footer__link" href="">Discord</a>
+          </div>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__title">Account</h3>
+          <div class="footer__block-link">
+            <a class="footer__link" href="">Create Account</a>
+            <a class="footer__link" href="">Github</a>
+            <a class="footer__link" href="">Discord</a>
+          </div>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__title">Support</h3>
+          <div class="footer__block-link">
+            <a class="footer__link" href="">Contact</a>
+            <a class="footer__link" href="">Report user</a>
+            <a class="footer__link" href="">Terms of use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="search-modal-overlay">
+      <div class="search-modal">
+        <p class="search-modal__error">Function not implemented yet :(</p>
+        <button class="search-modal__btn">ok</button>
+      </div>
+    </div>
     <script src="/js/index.js"></script>
   </body>
 </html>
