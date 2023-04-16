@@ -153,7 +153,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: min(30vh, 10rem) 2em;
-    background-color: #8bb387e7;
+    background-color: #def3dbec;
     transform: translateX(100%);
     transition: all 0.4s;
   }
@@ -316,6 +316,8 @@ body {
 }
 
 .footer__container {
+  max-width: 1800px;
+  margin: 0 auto;
   padding: 0 200px;
   display: flex;
   justify-content: space-between;
