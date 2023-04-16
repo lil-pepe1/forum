@@ -296,6 +296,9 @@ body {
   .main__table-data--first {
     border-top: 1px solid rgb(75, 75, 75);
   }
+  .main__table-data--desktop-only {
+    display: none;
+  }
 }
 
 .footer {
