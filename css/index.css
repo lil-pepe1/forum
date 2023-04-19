@@ -56,9 +56,10 @@ body {
 }
 
 .header__link {
-  padding: 10px;
-  border: 2px solid rgb(75, 75, 75);
+  padding: 10px 15px;
+  border: 1px solid black;
   color: var(--text-color);
+  background-color: #baebb6;
   font-weight: 600;
   border-radius: 8px;
   text-decoration: none;
@@ -66,8 +67,8 @@ body {
 }
 
 .header__link:hover {
-  background-color: rgb(75, 75, 75);
-  color: var(--header-bg);
+  background-color: var(--nav-bg);
+  color: black;
 }
 
 .header__burger {
