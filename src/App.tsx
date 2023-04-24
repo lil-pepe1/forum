@@ -1,5 +1,5 @@
 import Navbar from "./components/NavBar";
-import Topic from "./components/topic";
+import Topic from "./components/Topic";
 import Footer from "./components/Footer";
 import SearchModal from "./components/SearchModal";
 import "./app.css";
